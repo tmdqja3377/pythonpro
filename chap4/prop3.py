@@ -4,12 +4,11 @@ print("\nI'm thinking of a number between 1 and 100.")
 print("Try to guess it in as few attempts as possible.\n\n")
 N = random.randrange(1,101)
 count = 0;
-print(N)
 while (1) : 
     number = int(input("Take a guess: "))
     count = count + 1
     if number > N :
-        print("Lower...")
+        print("Lower...")   #오른쪽에서 읽어오는 방식이라 그런듯
     elif number < N :
         print("Higher...")
     else:
