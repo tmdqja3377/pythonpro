@@ -1,7 +1,7 @@
 import random as R
 words = ["difficult","banana","apple","python","daegu","catholic","university"]
 check = []
-hp = 6
+hp = 3
 chosen = R.choice(words)         #1
 player = ""
 leng = len(chosen)
