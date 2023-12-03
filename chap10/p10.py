@@ -46,8 +46,12 @@ print(card3)
 print(card4)
 print(card5)
 
+print("\nPrinting my hand before I add any cards:")
+
 my_hand = Hand()
 print(my_hand)
+
+print("\nprinting my hand after adding 5 cards:")
 my_hand.add(card1)
 my_hand.add(card2)
 my_hand.add(card3)
@@ -56,11 +60,18 @@ my_hand.add(card5)
 
 print(my_hand)
 
+print("\nGave the first two cards from my hand to your hand.")
 your_hand = Hand()
 my_hand.give(card1, your_hand)
 my_hand.give(card2, your_hand)
+
+print("Your hand:")
 print(your_hand)
+print("My hand:")
 print(my_hand)
+print("\nMy hand after clearing it:")
 my_hand.clear()
 print(my_hand)
+
+input("\n\nPress the enter key to exit.")
 
